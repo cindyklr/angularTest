@@ -1,0 +1,9 @@
+<div>
+  <h3>Child 1</h3>
+  <div class="form-group">
+    <label for="input-field">Input</label>
+    <input type="text" class="form-control" id="input-field" [ngModelOptions]="{standalone: true}" [ngModel]="input" (ngModelChange)="onChangeValue($event)">
+  </div>
+</div>
+
+

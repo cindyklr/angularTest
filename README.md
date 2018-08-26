@@ -1,27 +1,17 @@
-# AngularTest
+# ExerciceAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+* Trois composants (un parent et deux enfants)
 
-## Development server
+* L’enfant 1 contient un input
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Le parent affiche sous forme de liste les lettres entrées dans l’input de l’enfant 1
 
-## Code scaffolding
+* Les lettres de la liste doivent être en majuscule
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Une lettre sur deux doit être bleue
 
-## Build
+* Les voyelles doivent être en orange (cette règle est prioritaire par rapport à la précédente)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* L’enfant 2 contient un bouton
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Lorsque l’on appuie dessus, les 10 dernières lettres (l’espace compte comme lettre) de l’input de l’enfant 1 s’affichent en title case (majuscule pour la première lettre de chaque mot, minuscule pour le reste) avec un délai de 2 secondes

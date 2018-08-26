@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* style de la liste de lettres */
+.letter-color{
+  color: rgb(4, 157, 245);
+}
+.odd{
+  color: black;
+}
+.orange {
+  color: rgb(255, 123, 0);
+}
+/* margin entre composants */
+.margin-sm-right{
+  margin-right: 10%;
+}
+.margin-sm-top {
+  margin-top: 10%;
+}

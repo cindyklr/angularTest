@@ -1,0 +1,11 @@
+<div>
+  <h3>Child 2</h3>
+  <div>
+    <button class="btn btn-primary" (click)="onClick($event)">
+      Click
+    </button>
+    <div class="margin-sm-top">
+        <p *ngIf="returnString !== ''" class="alert alert-info">{{returnString | titlecase}}</p>
+    </div>
+  </div>
+</div>

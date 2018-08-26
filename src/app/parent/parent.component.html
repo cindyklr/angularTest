@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-title">
+    <h2>Parent</h2>
+  </div>
+  <div class="card-body">
+    <div>
+      <ul>
+        <li *ngFor="let letter of arrayValues;let odd = odd" [class]="isVowel(letter)" [class.odd]="odd">{{letter | uppercase}}</li>
+      </ul>
+    </div>
+    <div class="d-flex">
+      <div class="p-6 margin-sm-right">
+        <app-child1 (inputChild)="onEmitValue($event)"></app-child1>
+      </div>
+      <div class="p-6 margin-sm-right">
+        <app-child2 [inputString]="arrayValues"></app-child2>
+      </div>
+    </div>
+  </div>
+</div>
